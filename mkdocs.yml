@@ -1,12 +1,37 @@
-site_name: Isaac's Docs
+# site info
+site_name: Isaac's Docs - ECON 3101
 repo_name: isaacmaruyama.github.io
 repo_url: https://isaacmaruyama.github.io/
 
+# site navigation
+nav:
+  - Home: index.md
+  - Math Review:
+    - Mathematics for Microeconomics:
+      - Math Review: Mathematics for Microeconomics/math-review.md
+  - Microeconomic Foundations:
+    - Consumer Theory:
+      - Preference and Indifference Curves: Consumer Theory/preference-and-indifference-curves.md
+    - Theory of the Firm:
+      - Introduction to the Theory of the Firm and Production: Theory of the Firm/introduction-to-the-theory-of-the-firm-and-production.md
+    - Partial Equilibrium:
+      - Short Run and Long Run Equilibria: Partial Equilibrium/short-run-and-long-run-equilibria.md
+    - General Equilibrium:
+      - General Equilibrium/Edgeworth Box: General Equilibrium/general-equilibrium-edgeworth-box.md
+  - Advanced Topics:  
+    - Game Theory:
+      - Simultaneous Games and Best Responses: Game Theory/simultaneous-games-and-best-responses.md
+    - Monopoly: 
+      - Introduction to Uniform Pricing: Monopoly/introduction-to-uniform-pricing.md
+    - Imperfect Competition:
+      - Cournot Competition and Collusion: Imperfect Competition/cournot-competition-and-collusion.md
+
+# theme settings
 theme:
   name: material
-  favicon: images/flask.png
+  favicon: images/chart-areaspline.png
   icon:
-    logo: material/flask
+    logo: material/chart-areaspline
   font:
     text: Roboto Slab
   palette:
@@ -15,6 +40,7 @@ theme:
   features:
     - navigation.tabs
 
+# markdown extensions
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
@@ -25,6 +51,7 @@ markdown_extensions:
       permalink: true
   - footnotes
 
+# extra javascript
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
