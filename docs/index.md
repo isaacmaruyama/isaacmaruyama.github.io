@@ -1,8 +1,10 @@
-# Welcome to Isaac's Docs!
+# Welcome to Isaac's Notes!
 
-This website is a documentation for Intermediate Microeconomics (ECON 3101) at the University of Minnesota. Its purpose is to provide a concise yet comprehensive overview of the topics covered in the course, for study or for review.
+This website is a collection of notes for Intermediate Microeconomics (ECON 3101) at the University of Minnesota. Its purpose is to provide a concise yet comprehensive overview of the topics covered in the course, for study or for review.
 
-It was created by Isaac Maruyama using mkdocs and GitHub Pages.
+It was created by Isaac Maruyama using mkdocs and GitHub Pages, which should allow anyone to edit/make suggestions for the site by creating a pull request on GitHub. 
+
+The intent of this setup is to remove barriers to accessing educational resources, and to create resources that are designed to be improved by anyone.
 
 ## Course Outline
 
