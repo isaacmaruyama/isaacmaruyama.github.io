@@ -5,8 +5,8 @@ repo_url: https://isaacmaruyama.github.io/
 
 # site navigation
 nav:
-  - Course Outline: index.md
   - About: about.md
+  - Course Outline: index.md
   - Math Review:
     - Mathematics for Microeconomics:
       - Math Review: Mathematics for Microeconomics/math-review.md
