@@ -41,6 +41,20 @@ theme:
   features:
     - navigation.tabs
 
+# extra settings
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/isaac.maruyama.5/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/isaacmaruyama/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/isaac-maruyama-0273a91b7/
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/@isaacmaruyama
+
+
+
 # markdown extensions
 markdown_extensions:
   - pymdownx.arithmatex:
