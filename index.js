@@ -87,7 +87,7 @@ window.addEventListener("keyup", function(event) {
         for (let i in simplemaps_usmap_mapdata.labels) {
             let labelChar = i.split("");
             let labelReverseChar = [];
-            labelReverseChar.push(labelChar[1], labelChar[0])
+            labelReverseChar.push(labelChar[1], labelChar[0]);
             let labelReverse = labelReverseChar.join("");
             simplemaps_usmap_mapdata.labels[i].name = labelReverse;
         }
