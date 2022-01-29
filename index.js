@@ -79,8 +79,13 @@ window.addEventListener("keyup", function(event) {
     }
 })
 
-window.addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function(event) {
+    reverseLabels();
+})
+
+function reverseLabels() {
     if (event.key === "r" && inputReverse === false) {
+        console.log("r");
         inputReverse = true;
         simplemaps_usmap_mapdata.main_settings.state_color = "#1a1a1b";
         simplemaps_usmap_mapdata.main_settings.label_color = "#ffffff";
@@ -100,7 +105,7 @@ window.addEventListener("keyup", function(event) {
         }
     }
     simplemaps_usmap.refresh();
-})
+}
 
 window.addEventListener("keyup", function(event) {
     if (event.key === "Enter" && inputWord.length === 6) {
