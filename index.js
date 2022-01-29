@@ -80,10 +80,6 @@ window.addEventListener("keyup", function(event) {
 })
 
 document.addEventListener("keyup", function(event) {
-    reverseLabels();
-})
-
-function reverseLabels() {
     if (event.key === "r" && inputReverse === false) {
         console.log("r");
         inputReverse = true;
@@ -105,7 +101,8 @@ function reverseLabels() {
         }
     }
     simplemaps_usmap.refresh();
-}
+})
+
 
 window.addEventListener("keyup", function(event) {
     if (event.key === "Enter" && inputWord.length === 6) {
