@@ -1,0 +1,49 @@
+:root {
+    --box-size: 60px;
+}
+
+body {
+    padding: 20px;
+    font-family: Helvetica;
+}
+
+.header {
+    text-align: center;
+    color: #1a1a1b;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+  
+.box-container {
+    display: grid;
+    flex-grow: 2;
+    justify-content: center;
+    grid-template-columns: repeat(6, var(--box-size));
+    grid-template-rows: repeat(7, var(--box-size));
+    grid-gap: 10px;
+}
+  
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #d3d6da;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1a1a1b;
+}
+
+#map {
+    display: grid;
+    flex-grow: 5;
+
+}
+
