@@ -1,5 +1,5 @@
 :root {
-    --box-size: 60px;
+    --box-size: 70px;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
 
 .header {
     text-align: center;
+    font-size: 30px;
     color: #1a1a1b;
 }
 
@@ -43,7 +44,7 @@ body {
 
 #map {
     display: grid;
-    flex-grow: 5;
+    width: 1000px;
 
 }
 
