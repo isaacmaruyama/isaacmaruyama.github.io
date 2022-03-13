@@ -6,16 +6,16 @@
   --box-size: 50px; 
   --title-font-size: 50px;
   --main-font-size: 25px;
+  --popup-font-size: 15px;
   --small-font-size: 8px;
   --bkg-color: #121213;
   --border-color: gray;
   --text-color: white;
 }
+
 body {
   background-color: var(--bkg-color);
   color: var(--text-color);
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 /* header settings */
@@ -148,6 +148,7 @@ body {
   margin: 52.5px auto;
   background-color: var(--bkg-color);
   border: 1px solid var(--border-color);
+  font-size: var(--popup-font-size);
   width: 80%;
 }
 #help-close, #stats-close {float: right;}
@@ -171,6 +172,6 @@ body {
 #help-popup-W {background-color:rgb(100, 0, 200); grid-row: 1;}
 #help-popup-Al {background-color:rgb(200, 0, 100); grid-row: 2;}
 #help-popup-Se {background-color:rgb(0, 200, 0);grid-row: 3;}
-#help-popup-W-description {grid-row: 1; grid-column: 2;}
+#help-popup-W-description {grid-row: 1; grid-column: 2; font-size: var(--popup-font-size)}
 #help-popup-Al-description {grid-row: 2; grid-column: 2;}
 #help-popup-Se-description {grid-row: 3; grid-column: 2;}
