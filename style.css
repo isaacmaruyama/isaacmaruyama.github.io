@@ -20,6 +20,8 @@ body {
 
 /* header settings */
 .header {
+  position: relative;
+  left: 25px;
   grid-column-start: 3;
   grid-column-end: 13;
   display: flex;
