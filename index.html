@@ -3,56 +3,700 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>STATLE</title>
+        <title>Elementle</title>
         <link rel="stylesheet" href="style.css">
-        <script src="mapdata.js"></script>		
-        <script src="usmap.js"></script>
     </head>
     <body>
-        <script src="index.js"></script>
-        <div class="header">
-            <h1>STATLE</h1>
-        </div>
-        <div class="body-container">
-            <div class="box-container">
-                <div class="box" id="1"></div>
-                <div class="box" id="2"></div>
-                <div class="box" id="3"></div>
-                <div class="box" id="4"></div>
-                <div class="box" id="5"></div>
-                <div class="box" id="6"></div>
-                <div class="box" id="7"></div>
-                <div class="box" id="8"></div>
-                <div class="box" id="9"></div>
-                <div class="box" id="10"></div>
-                <div class="box" id="11"></div>
-                <div class="box" id="12"></div>
-                <div class="box" id="13"></div>
-                <div class="box" id="14"></div>
-                <div class="box" id="15"></div>
-                <div class="box" id="16"></div>
-                <div class="box" id="17"></div>
-                <div class="box" id="18"></div>
-                <div class="box" id="19"></div>
-                <div class="box" id="20"></div>
-                <div class="box" id="21"></div>
-                <div class="box" id="22"></div>
-                <div class="box" id="23"></div>
-                <div class="box" id="24"></div>
-                <div class="box" id="25"></div>
-                <div class="box" id="26"></div>
-                <div class="box" id="27"></div>
-                <div class="box" id="28"></div>
-                <div class="box" id="29"></div>
-                <div class="box" id="30"></div>
-                <div class="box" id="31"></div>
-                <div class="box" id="32"></div>
-                <div class="box" id="33"></div>
-                <div class="box" id="34"></div>
-                <div class="box" id="35"></div>
-                <div class="box" id="36"></div>
+        <div class="periodic-table">
+            <div class="main-table">
+                <div class='element' id='H'>
+                    <div class='symbol' id='H-symbol'>?</div><div class='number' id='H-number'>1</div><div class='mass' id='H-mass'>1.007</div></div>
+
+                <div class="header">
+                    <div class="help">
+                        <img id="help" src='lightbulb.svg' height="30px" width="30px" alt="lightbulb"/>
+                    </div>
+                    <div class="title">
+                        ELEME
+                        <div class='title-element' id='title-N'>
+                            <div class='symbol' id='title-N-symbol'>N</div>
+                            <div class='number' id='title-N-number'>?</div>
+                            <div class='mass' id='title-N-mass'>??.???</div>
+                        </div>
+                        <div class='title-element' id='title-Tl'>
+                            <div class='symbol' id='title-Tl-symbol'>Tl</div>
+                            <div class='number' id='title-Tl-number'>?</div>
+                            <div class='mass' id='title-Tl-mass'>???.???</div>
+                        </div>
+                        E
+                    </div>
+                    <div class="stats">
+                        <img id="stats" src='leaderboard.svg' height="30px" width="30px" alt="leaderboard"/>
+                    </div>
+                    <div class="refresh">
+                        <img id="refresh" src='refresh.svg' height="30px" width="30px" alt="refresh"/>
+                    </div>
+                </div>
+
+                <div class='element' id='He'>
+                    <div class='symbol' id="He-symbol">?</div>
+                    <div class='number' id="He-number">2</div>
+                    <div class='mass' id='He-mass'>4.002</div>
+                </div>
+                <div class='element' id='Li'>
+                    <div class='symbol' id='Li-symbol'>?</div>
+                    <div class='number' id='Li-number'>3</div>
+                    <div class='mass' id='Li-mass'>6.941</div>
+                </div>
+                <div class='element' id='Be'>
+                        <div class='symbol' id='Be-symbol'>?</div>
+                        <div class='number' id='Be-number'>4</div>
+                        <div class='mass' id='Be-mass'>9.012</div>
+                </div>
+
+                <div id="target">Target Element:</div>
+                    
+                <div class='element' id='B'>
+                    <div class='symbol' id='B-symbol'>?</div>
+                    <div class='number' id='B-number'>5</div>
+                    <div class='mass' id='B-mass'>10.811</div>
+                </div>
+                <div class='element' id='C'>
+                        <div class='symbol' id='C-symbol'>?</div>
+                        <div class='number' id='C-number'>6</div>
+                        <div class='mass' id='C-mass'>12.011</div>
+                </div>
+                <div class='element' id='N'>
+                        <div class='symbol' id='N-symbol'>?</div>
+                        <div class='number' id='N-number'>7</div>
+                        <div class='mass' id='N-mass'>14.007</div>
+                </div>
+                <div class='element' id='O'>
+                        <div class='symbol' id='O-symbol'>?</div>
+                        <div class='number' id='O-number'>8</div>
+                        <div class='mass' id='O-mass'>15.999</div>
+                </div>
+                <div class='element' id='F'>
+                        <div class='symbol' id='F-symbol'>?</div>
+                        <div class='number' id='F-number'>9</div>
+                        <div class='mass' id='F-mass'>18.998</div>
+                </div>
+                <div class='element' id='Ne'>
+                        <div class='symbol' id='Ne-symbol'>?</div>
+                        <div class='number' id='Ne-number'>10</div>
+                        <div class='mass' id='Ne-mass'>20.18</div>
+                </div>
+                <div class='element' id='Na'>
+                        <div class='symbol' id='Na-symbol'>?</div>
+                        <div class='number' id='Na-number'>11</div>
+                        <div class='mass' id='Na-mass'>22.99</div>
+                </div>
+                <div class='element' id='Mg'>
+                        <div class='symbol' id='Mg-symbol'>?</div>
+                        <div class='number' id='Mg-number'>12</div>
+                        <div class='mass' id='Mg-mass'>24.305</div>
+                </div>
+
+                <div id="guesses">Guesses: </div>
+
+                <div class='element' id='Al'>
+                    <div class='symbol' id='Al-symbol'>?</div>
+                    <div class='number' id='Al-number'>13</div>
+                    <div class='mass' id='Al-mass'>26.982</div>
+                </div>
+                <div class='element' id='Si'>
+                        <div class='symbol' id='Si-symbol'>?</div>
+                        <div class='number' id='Si-number'>14</div>
+                        <div class='mass' id='Si-mass'>28.086</div>
+                </div>
+                <div class='element' id='P'>
+                        <div class='symbol' id='P-symbol'>?</div>
+                        <div class='number' id='P-number'>15</div>
+                        <div class='mass' id='P-mass'>30.974</div>
+                </div>
+                <div class='element' id='S'>
+                        <div class='symbol' id='S-symbol'>?</div>
+                        <div class='number' id='S-number'>16</div>
+                        <div class='mass' id='S-mass'>32.065</div>
+                </div>
+                <div class='element' id='Cl'>
+                        <div class='symbol' id='Cl-symbol'>?</div>
+                        <div class='number' id='Cl-number'>17</div>
+                        <div class='mass' id='Cl-mass'>35.453</div>
+                </div>
+                <div class='element' id='Ar'>
+                        <div class='symbol' id='Ar-symbol'>?</div>
+                        <div class='number' id='Ar-number'>18</div>
+                        <div class='mass' id='Ar-mass'>39.948</div>
+                </div>
+                <div class='element' id='K'>
+                        <div class='symbol' id='K-symbol'>?</div>
+                        <div class='number' id='K-number'>19</div>
+                        <div class='mass' id='K-mass'>39.098</div>
+                </div>
+                <div class='element' id='Ca'>
+                        <div class='symbol' id='Ca-symbol'>?</div>
+                        <div class='number' id='Ca-number'>20</div>
+                        <div class='mass' id='Ca-mass'>40.078</div>
+                </div>
+                <div class='element' id='Sc'>
+                        <div class='symbol' id='Sc-symbol'>?</div>
+                        <div class='number' id='Sc-number'>21</div>
+                        <div class='mass' id='Sc-mass'>44.956</div>
+                </div>
+                <div class='element' id='Ti'>
+                        <div class='symbol' id='Ti-symbol'>?</div>
+                        <div class='number' id='Ti-number'>22</div>
+                        <div class='mass' id='Ti-mass'>47.867</div>
+                </div>
+                <div class='element' id='V'>
+                        <div class='symbol' id='V-symbol'>?</div>
+                        <div class='number' id='V-number'>23</div>
+                        <div class='mass' id='V-mass'>50.942</div>
+                </div>
+                <div class='element' id='Cr'>
+                        <div class='symbol' id='Cr-symbol'>?</div>
+                        <div class='number' id='Cr-number'>24</div>
+                        <div class='mass' id='Cr-mass'>51.996</div>
+                </div>
+                <div class='element' id='Mn'>
+                        <div class='symbol' id='Mn-symbol'>?</div>
+                        <div class='number' id='Mn-number'>25</div>
+                        <div class='mass' id='Mn-mass'>54.938</div>
+                </div>
+                <div class='element' id='Fe'>
+                        <div class='symbol' id='Fe-symbol'>?</div>
+                        <div class='number' id='Fe-number'>26</div>
+                        <div class='mass' id='Fe-mass'>55.845</div>
+                </div>
+                <div class='element' id='Co'>
+                        <div class='symbol' id='Co-symbol'>?</div>
+                        <div class='number' id='Co-number'>27</div>
+                        <div class='mass' id='Co-mass'>58.933</div>
+                </div>
+                <div class='element' id='Ni'>
+                        <div class='symbol' id='Ni-symbol'>?</div>
+                        <div class='number' id='Ni-number'>28</div>
+                        <div class='mass' id='Ni-mass'>58.693</div>
+                </div>
+                <div class='element' id='Cu'>
+                        <div class='symbol' id='Cu-symbol'>?</div>
+                        <div class='number' id='Cu-number'>29</div>
+                        <div class='mass' id='Cu-mass'>63.546</div>
+                </div>
+                <div class='element' id='Zn'>
+                        <div class='symbol' id='Zn-symbol'>?</div>
+                        <div class='number' id='Zn-number'>30</div>
+                        <div class='mass' id='Zn-mass'>65.38</div>
+                </div>
+                <div class='element' id='Ga'>
+                        <div class='symbol' id='Ga-symbol'>?</div>
+                        <div class='number' id='Ga-number'>31</div>
+                        <div class='mass' id='Ga-mass'>69.723</div>
+                </div>
+                <div class='element' id='Ge'>
+                        <div class='symbol' id='Ge-symbol'>?</div>
+                        <div class='number' id='Ge-number'>32</div>
+                        <div class='mass' id='Ge-mass'>72.64</div>
+                </div>
+                <div class='element' id='As'>
+                        <div class='symbol' id='As-symbol'>?</div>
+                        <div class='number' id='As-number'>33</div>
+                        <div class='mass' id='As-mass'>74.922</div>
+                </div>
+                <div class='element' id='Se'>
+                        <div class='symbol' id='Se-symbol'>?</div>
+                        <div class='number' id='Se-number'>34</div>
+                        <div class='mass' id='Se-mass'>78.96</div>
+                </div>
+                <div class='element' id='Br'>
+                        <div class='symbol' id='Br-symbol'>?</div>
+                        <div class='number' id='Br-number'>35</div>
+                        <div class='mass' id='Br-mass'>79.904</div>
+                </div>
+                <div class='element' id='Kr'>
+                        <div class='symbol' id='Kr-symbol'>?</div>
+                        <div class='number' id='Kr-number'>36</div>
+                        <div class='mass' id='Kr-mass'>83.798</div>
+                </div>
+                <div class='element' id='Rb'>
+                        <div class='symbol' id='Rb-symbol'>?</div>
+                        <div class='number' id='Rb-number'>37</div>
+                        <div class='mass' id='Rb-mass'>85.468</div>
+                </div>
+                <div class='element' id='Sr'>
+                        <div class='symbol' id='Sr-symbol'>?</div>
+                        <div class='number' id='Sr-number'>38</div>
+                        <div class='mass' id='Sr-mass'>87.62</div>
+                </div>
+                <div class='element' id='Y'>
+                        <div class='symbol' id='Y-symbol'>?</div>
+                        <div class='number' id='Y-number'>39</div>
+                        <div class='mass' id='Y-mass'>88.906</div>
+                </div>
+                <div class='element' id='Zr'>
+                        <div class='symbol' id='Zr-symbol'>?</div>
+                        <div class='number' id='Zr-number'>40</div>
+                        <div class='mass' id='Zr-mass'>91.224</div>
+                </div>
+                <div class='element' id='Nb'>
+                        <div class='symbol' id='Nb-symbol'>?</div>
+                        <div class='number' id='Nb-number'>41</div>
+                        <div class='mass' id='Nb-mass'>92.906</div>
+                </div>
+                <div class='element' id='Mo'>
+                        <div class='symbol' id='Mo-symbol'>?</div>
+                        <div class='number' id='Mo-number'>42</div>
+                        <div class='mass' id='Mo-mass'>95.96</div>
+                </div>
+                <div class='element' id='Tc'>
+                        <div class='symbol' id='Tc-symbol'>?</div>
+                        <div class='number' id='Tc-number'>43</div>
+                        <div class='mass' id='Tc-mass'>98</div>
+                </div>
+                <div class='element' id='Ru'>
+                        <div class='symbol' id='Ru-symbol'>?</div>
+                        <div class='number' id='Ru-number'>44</div>
+                        <div class='mass' id='Ru-mass'>101.07</div>
+                </div>
+                <div class='element' id='Rh'>
+                        <div class='symbol' id='Rh-symbol'>?</div>
+                        <div class='number' id='Rh-number'>45</div>
+                        <div class='mass' id='Rh-mass'>102.906</div>
+                </div>
+                <div class='element' id='Pd'>
+                        <div class='symbol' id='Pd-symbol'>?</div>
+                        <div class='number' id='Pd-number'>46</div>
+                        <div class='mass' id='Pd-mass'>106.42</div>
+                </div>
+                <div class='element' id='Ag'>
+                        <div class='symbol' id='Ag-symbol'>?</div>
+                        <div class='number' id='Ag-number'>47</div>
+                        <div class='mass' id='Ag-mass'>107.868</div>
+                </div>
+                <div class='element' id='Cd'>
+                        <div class='symbol' id='Cd-symbol'>?</div>
+                        <div class='number' id='Cd-number'>48</div>
+                        <div class='mass' id='Cd-mass'>112.411</div>
+                </div>
+                <div class='element' id='In'>
+                        <div class='symbol' id='In-symbol'>?</div>
+                        <div class='number' id='In-number'>49</div>
+                        <div class='mass' id='In-mass'>114.818</div>
+                </div>
+                <div class='element' id='Sn'>
+                        <div class='symbol' id='Sn-symbol'>?</div>
+                        <div class='number' id='Sn-number'>50</div>
+                        <div class='mass' id='Sn-mass'>118.71</div>
+                </div>
+                <div class='element' id='Sb'>
+                        <div class='symbol' id='Sb-symbol'>?</div>
+                        <div class='number' id='Sb-number'>51</div>
+                        <div class='mass' id='Sb-mass'>121.76</div>
+                </div>
+                <div class='element' id='Te'>
+                        <div class='symbol' id='Te-symbol'>?</div>
+                        <div class='number' id='Te-number'>52</div>
+                        <div class='mass' id='Te-mass'>127.6</div>
+                </div>
+                <div class='element' id='I'>
+                        <div class='symbol' id='I-symbol'>?</div>
+                        <div class='number' id='I-number'>53</div>
+                        <div class='mass' id='I-mass'>126.904</div>
+                </div>
+                <div class='element' id='Xe'>
+                        <div class='symbol' id='Xe-symbol'>?</div>
+                        <div class='number' id='Xe-number'>54</div>
+                        <div class='mass' id='Xe-mass'>131.293</div>
+                </div>
+                <div class='element' id='Cs'>
+                        <div class='symbol' id='Cs-symbol'>?</div>
+                        <div class='number' id='Cs-number'>55</div>
+                        <div class='mass' id='Cs-mass'>132.905</div>
+                </div>
+                <div class='element' id='Ba'>
+                        <div class='symbol' id='Ba-symbol'>?</div>
+                        <div class='number' id='Ba-number'>56</div>
+                        <div class='mass' id='Ba-mass'>137.327</div>
+                </div>
+                <div class='element' id='La'>
+                        <div class='symbol' id='La-symbol'>?</div>
+                        <div class='number' id='La-number'>57</div>
+                        <div class='mass' id='La-mass'>138.905</div>
+                </div>
+
+                <div class='element' id='Hf'>
+                    <div class='symbol' id='Hf-symbol'>?</div>
+                    <div class='number' id='Hf-number'>72</div>
+                    <div class='mass' id='Hf-mass'>178.49</div>
+                </div>
+                <div class='element' id='Ta'>
+                        <div class='symbol' id='Ta-symbol'>?</div>
+                        <div class='number' id='Ta-number'>73</div>
+                        <div class='mass' id='Ta-mass'>180.948</div>
+                </div>
+                <div class='element' id='W'>
+                        <div class='symbol' id='W-symbol'>?</div>
+                        <div class='number' id='W-number'>74</div>
+                        <div class='mass' id='W-mass'>183.84</div>
+                </div>
+                <div class='element' id='Re'>
+                        <div class='symbol' id='Re-symbol'>?</div>
+                        <div class='number' id='Re-number'>75</div>
+                        <div class='mass' id='Re-mass'>186.207</div>
+                </div>
+                <div class='element' id='Os'>
+                        <div class='symbol' id='Os-symbol'>?</div>
+                        <div class='number' id='Os-number'>76</div>
+                        <div class='mass' id='Os-mass'>190.23</div>
+                </div>
+                <div class='element' id='Ir'>
+                        <div class='symbol' id='Ir-symbol'>?</div>
+                        <div class='number' id='Ir-number'>77</div>
+                        <div class='mass' id='Ir-mass'>192.217</div>
+                </div>
+                <div class='element' id='Pt'>
+                        <div class='symbol' id='Pt-symbol'>?</div>
+                        <div class='number' id='Pt-number'>78</div>
+                        <div class='mass' id='Pt-mass'>195.084</div>
+                </div>
+                <div class='element' id='Au'>
+                        <div class='symbol' id='Au-symbol'>?</div>
+                        <div class='number' id='Au-number'>79</div>
+                        <div class='mass' id='Au-mass'>196.967</div>
+                </div>
+                <div class='element' id='Hg'>
+                        <div class='symbol' id='Hg-symbol'>?</div>
+                        <div class='number' id='Hg-number'>80</div>
+                        <div class='mass' id='Hg-mass'>200.59</div>
+                </div>
+                <div class='element' id='Tl'>
+                        <div class='symbol' id='Tl-symbol'>?</div>
+                        <div class='number' id='Tl-number'>81</div>
+                        <div class='mass' id='Tl-mass'>204.383</div>
+                </div>
+                <div class='element' id='Pb'>
+                        <div class='symbol' id='Pb-symbol'>?</div>
+                        <div class='number' id='Pb-number'>82</div>
+                        <div class='mass' id='Pb-mass'>207.2</div>
+                </div>
+                <div class='element' id='Bi'>
+                        <div class='symbol' id='Bi-symbol'>?</div>
+                        <div class='number' id='Bi-number'>83</div>
+                        <div class='mass' id='Bi-mass'>208.98</div>
+                </div>
+                <div class='element' id='Po'>
+                        <div class='symbol' id='Po-symbol'>?</div>
+                        <div class='number' id='Po-number'>84</div>
+                        <div class='mass' id='Po-mass'>210</div>
+                </div>
+                <div class='element' id='At'>
+                        <div class='symbol' id='At-symbol'>?</div>
+                        <div class='number' id='At-number'>85</div>
+                        <div class='mass' id='At-mass'>210</div>
+                </div>
+                <div class='element' id='Rn'>
+                        <div class='symbol' id='Rn-symbol'>?</div>
+                        <div class='number' id='Rn-number'>86</div>
+                        <div class='mass' id='Rn-mass'>222</div>
+                </div>
+                <div class='element' id='Fr'>
+                        <div class='symbol' id='Fr-symbol'>?</div>
+                        <div class='number' id='Fr-number'>87</div>
+                        <div class='mass' id='Fr-mass'>223</div>
+                </div>
+                <div class='element' id='Ra'>
+                        <div class='symbol' id='Ra-symbol'>?</div>
+                        <div class='number' id='Ra-number'>88</div>
+                        <div class='mass' id='Ra-mass'>226</div>
+                </div>
+                <div class='element' id='Ac'>
+                        <div class='symbol' id='Ac-symbol'>?</div>
+                        <div class='number' id='Ac-number'>89</div>
+                        <div class='mass' id='Ac-mass'>227</div>
+                </div>
+                
+                <div class='element' id='Rf'>
+                    <div class='symbol' id='Rf-symbol'>?</div>
+                    <div class='number' id='Rf-number'>104</div>
+                    <div class='mass' id='Rf-mass'>261</div>
+                </div>
+                <div class='element' id='Db'>
+                        <div class='symbol' id='Db-symbol'>?</div>
+                        <div class='number' id='Db-number'>105</div>
+                        <div class='mass' id='Db-mass'>262</div>
+                </div>
+                <div class='element' id='Sg'>
+                        <div class='symbol' id='Sg-symbol'>?</div>
+                        <div class='number' id='Sg-number'>106</div>
+                        <div class='mass' id='Sg-mass'>266</div>
+                </div>
+                <div class='element' id='Bh'>
+                        <div class='symbol' id='Bh-symbol'>?</div>
+                        <div class='number' id='Bh-number'>107</div>
+                        <div class='mass' id='Bh-mass'>264</div>
+                </div>
+                <div class='element' id='Hs'>
+                        <div class='symbol' id='Hs-symbol'>?</div>
+                        <div class='number' id='Hs-number'>108</div>
+                        <div class='mass' id='Hs-mass'>267</div>
+                </div>
+                <div class='element' id='Mt'>
+                        <div class='symbol' id='Mt-symbol'>?</div>
+                        <div class='number' id='Mt-number'>109</div>
+                        <div class='mass' id='Mt-mass'>268</div>
+                </div>
+                <div class='element' id='Ds'>
+                        <div class='symbol' id='Ds-symbol'>?</div>
+                        <div class='number' id='Ds-number'>110</div>
+                        <div class='mass' id='Ds-mass'>271</div>
+                </div>
+                <div class='element' id='Rg'>
+                        <div class='symbol' id='Rg-symbol'>?</div>
+                        <div class='number' id='Rg-number'>111</div>
+                        <div class='mass' id='Rg-mass'>272</div>
+                </div>
+                <div class='element' id='Cn'>
+                        <div class='symbol' id='Cn-symbol'>?</div>
+                        <div class='number' id='Cn-number'>112</div>
+                        <div class='mass' id='Cn-mass'>285</div>
+                </div>
+                <div class='element' id='Nh'>
+                        <div class='symbol' id='Nh-symbol'>?</div>
+                        <div class='number' id='Nh-number'>113</div>
+                        <div class='mass' id='Nh-mass'>284</div>
+                </div>
+                <div class='element' id='Fl'>
+                        <div class='symbol' id='Fl-symbol'>?</div>
+                        <div class='number' id='Fl-number'>114</div>
+                        <div class='mass' id='Fl-mass'>289</div>
+                </div>
+                <div class='element' id='Mc'>
+                        <div class='symbol' id='Mc-symbol'>?</div>
+                        <div class='number' id='Mc-number'>115</div>
+                        <div class='mass' id='Mc-mass'>288</div>
+                </div>
+                <div class='element' id='Lv'>
+                        <div class='symbol' id='Lv-symbol'>?</div>
+                        <div class='number' id='Lv-number'>116</div>
+                        <div class='mass' id='Lv-mass'>292</div>
+                </div>
+                <div class='element' id='Ts'>
+                        <div class='symbol' id='Ts-symbol'>?</div>
+                        <div class='number' id='Ts-number'>117</div>
+                        <div class='mass' id='Ts-mass'>295</div>
+                </div>
+                <div class='element' id='Og'>
+                    <div class='symbol' id='Og-symbol'>?</div>
+                    <div class='number' id='Og-number'>118</div>
+                    <div class='mass' id='Og-mass'>294</div>
+                </div>
             </div>
-            <div id="map"></div>
+
+            <div class='bottom-table'>
+                <div class='element' id='Ce'>
+                    <div class='symbol' id='Ce-symbol'>?</div>
+                    <div class='number' id='Ce-number'>58</div>
+                    <div class='mass' id='Ce-mass'>140.116</div>
+                </div>
+                <div class='element' id='Pr'>
+                        <div class='symbol' id='Pr-symbol'>?</div>
+                        <div class='number' id='Pr-number'>59</div>
+                        <div class='mass' id='Pr-mass'>140.908</div>
+                </div>
+                <div class='element' id='Nd'>
+                        <div class='symbol' id='Nd-symbol'>?</div>
+                        <div class='number' id='Nd-number'>60</div>
+                        <div class='mass' id='Nd-mass'>144.242</div>
+                </div>
+                <div class='element' id='Pm'>
+                        <div class='symbol' id='Pm-symbol'>?</div>
+                        <div class='number' id='Pm-number'>61</div>
+                        <div class='mass' id='Pm-mass'>145</div>
+                </div>
+                <div class='element' id='Sm'>
+                        <div class='symbol' id='Sm-symbol'>?</div>
+                        <div class='number' id='Sm-number'>62</div>
+                        <div class='mass' id='Sm-mass'>150.36</div>
+                </div>
+                <div class='element' id='Eu'>
+                        <div class='symbol' id='Eu-symbol'>?</div>
+                        <div class='number' id='Eu-number'>63</div>
+                        <div class='mass' id='Eu-mass'>151.964</div>
+                </div>
+                <div class='element' id='Gd'>
+                        <div class='symbol' id='Gd-symbol'>?</div>
+                        <div class='number' id='Gd-number'>64</div>
+                        <div class='mass' id='Gd-mass'>157.25</div>
+                </div>
+                <div class='element' id='Tb'>
+                        <div class='symbol' id='Tb-symbol'>?</div>
+                        <div class='number' id='Tb-number'>65</div>
+                        <div class='mass' id='Tb-mass'>158.925</div>
+                </div>
+                <div class='element' id='Dy'>
+                        <div class='symbol' id='Dy-symbol'>?</div>
+                        <div class='number' id='Dy-number'>66</div>
+                        <div class='mass' id='Dy-mass'>162.5</div>
+                </div>
+                <div class='element' id='Ho'>
+                        <div class='symbol' id='Ho-symbol'>?</div>
+                        <div class='number' id='Ho-number'>67</div>
+                        <div class='mass' id='Ho-mass'>164.93</div>
+                </div>
+                <div class='element' id='Er'>
+                        <div class='symbol' id='Er-symbol'>?</div>
+                        <div class='number' id='Er-number'>68</div>
+                        <div class='mass' id='Er-mass'>167.259</div>
+                </div>
+                <div class='element' id='Tm'>
+                        <div class='symbol' id='Tm-symbol'>?</div>
+                        <div class='number' id='Tm-number'>69</div>
+                        <div class='mass' id='Tm-mass'>168.934</div>
+                </div>
+                <div class='element' id='Yb'>
+                        <div class='symbol' id='Yb-symbol'>?</div>
+                        <div class='number' id='Yb-number'>70</div>
+                        <div class='mass' id='Yb-mass'>173.054</div>
+                </div>
+                <div class='element' id='Lu'>
+                        <div class='symbol' id='Lu-symbol'>?</div>
+                        <div class='number' id='Lu-number'>71</div>
+                        <div class='mass' id='Lu-mass'>174.967</div>
+                </div>
+
+                <div class='element' id='Th'>
+                    <div class='symbol' id='Th-symbol'>?</div>
+                    <div class='number' id='Th-number'>90</div>
+                    <div class='mass' id='Th-mass'>232.038</div>
+                </div>
+                <div class='element' id='Pa'>
+                        <div class='symbol' id='Pa-symbol'>?</div>
+                        <div class='number' id='Pa-number'>91</div>
+                        <div class='mass' id='Pa-mass'>231.036</div>
+                </div>
+                <div class='element' id='U'>
+                        <div class='symbol' id='U-symbol'>?</div>
+                        <div class='number' id='U-number'>92</div>
+                        <div class='mass' id='U-mass'>238.029</div>
+                </div>
+                <div class='element' id='Np'>
+                        <div class='symbol' id='Np-symbol'>?</div>
+                        <div class='number' id='Np-number'>93</div>
+                        <div class='mass' id='Np-mass'>237</div>
+                </div>
+                <div class='element' id='Pu'>
+                        <div class='symbol' id='Pu-symbol'>?</div>
+                        <div class='number' id='Pu-number'>94</div>
+                        <div class='mass' id='Pu-mass'>244</div>
+                </div>
+                <div class='element' id='Am'>
+                        <div class='symbol' id='Am-symbol'>?</div>
+                        <div class='number' id='Am-number'>95</div>
+                        <div class='mass' id='Am-mass'>243</div>
+                </div>
+                <div class='element' id='Cm'>
+                        <div class='symbol' id='Cm-symbol'>?</div>
+                        <div class='number' id='Cm-number'>96</div>
+                        <div class='mass' id='Cm-mass'>247</div>
+                </div>
+                <div class='element' id='Bk'>
+                        <div class='symbol' id='Bk-symbol'>?</div>
+                        <div class='number' id='Bk-number'>97</div>
+                        <div class='mass' id='Bk-mass'>247</div>
+                </div>
+                <div class='element' id='Cf'>
+                        <div class='symbol' id='Cf-symbol'>?</div>
+                        <div class='number' id='Cf-number'>98</div>
+                        <div class='mass' id='Cf-mass'>251</div>
+                </div>
+                <div class='element' id='Es'>
+                        <div class='symbol' id='Es-symbol'>?</div>
+                        <div class='number' id='Es-number'>99</div>
+                        <div class='mass' id='Es-mass'>252</div>
+                </div>
+                <div class='element' id='Fm'>
+                        <div class='symbol' id='Fm-symbol'>?</div>
+                        <div class='number' id='Fm-number'>100</div>
+                        <div class='mass' id='Fm-mass'>257</div>
+                </div>
+                <div class='element' id='Md'>
+                        <div class='symbol' id='Md-symbol'>?</div>
+                        <div class='number' id='Md-number'>101</div>
+                        <div class='mass' id='Md-mass'>258</div>
+                </div>
+                <div class='element' id='No'>
+                        <div class='symbol' id='No-symbol'>?</div>
+                        <div class='number' id='No-number'>102</div>
+                        <div class='mass' id='No-mass'>259</div>
+                </div>
+                <div class='element' id='Lr'>
+                        <div class='symbol' id='Lr-symbol'>?</div>
+                        <div class='number' id='Lr-number'>103</div>
+                        <div class='mass' id='Lr-mass'>262</div>
+                </div>
+            </div>
+            
+            <div id="help-popup">
+                <div id="help-popup-content">
+                    <div id="help-popup-content-header">
+                        <img id="help-close" src='close.svg' height="30px" width="30px" alt="close"/>
+                        <h3>How to Play</h3>
+                    </div>
+                    <div id="help-popup-content-body">
+                        Guess the ELEMENTLE in as few guesses as possible.
+                        <br><br>
+                        Each guess must be a valid element on the periodic table. Click on an element to reveal its symbol.
+                        <br><br>
+                        After each guess, the color of the element will change to show how close your guess was to the target element. Redder is warmer, bluer is colder!
+                        <br><br><hr>
+                        <h3>Examples</h3>
+                    </div>
+                    <div id="help-popup-content-examples">
+                        <div class="help-popup-element" id="help-popup-W">
+                            <div class='symbol' id='help-popup-W-symbol'>W</div>
+                            <div class='number' id='help-popup-W-number'>74</div>
+                            <div class='mass' id='help-popup-W-mass'>183.84</div>
+                        </div>
+                        <div id="help-popup-W-desription">Tungsten is not the target element, and it is not close to the target element on the periodic table.</div>
+                        <br>
+                        <div class="help-popup-element" id="help-popup-Al">
+                            <div class='symbol' id='help-popup-Al-symbol'>Al</div>
+                            <div class='number' id='help-popup-Al-number'>13</div>
+                            <div class='mass' id='help-popup-Al-mass'>26.982</div>
+                        </div>
+                        <div id="help-popup-Al-description">Aluminum is not the target element, but it is close to the target element on the periodic table.</div>
+                        <br>
+                        <div class='help-popup-element' id='help-popup-Se'>
+                            <div class='symbol' id='help-popup-Se-symbol'>Se</div>
+                            <div class='number' id='help-popup-Se-number'>34</div>
+                            <div class='mass' id='help-popup-Se-mass'>78.96</div>
+                        </div>
+                        <div id="help-popup-Se-description">Selenium is the target element!</div>
+                    </div>
+                    <hr><br>
+                    A new ELEMENTLE will be available each day!
+                </div>
+            </div>
+
+            <div id="stats-popup">
+                <div id="stats-popup-content">
+                        <div id="stats-popup-content-header">
+                                <img id="stats-close" src='close.svg' height="30px" width="30px" alt="close"/>
+                                <h3>Game Stats</h3>
+                        </div> 
+                        <div id="stats-popup-content-body">
+                                <div id="stats-popup-total-guesses">You've guessed the ELEMENTLE 0 times.</div>
+                                <br>
+                                <div id="stats-popup-average-guesses">It takes you an average of 0 guesses to find the ELEMENTLE.</div>
+                                <br>
+                                Here's your complete list of guesses:
+                                <br><br>
+                                <div id="stats-popup-guesses-list"></div>
+                        </div>
+                </div>
+            </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>

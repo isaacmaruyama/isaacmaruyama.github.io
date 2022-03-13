@@ -1,50 +1,172 @@
+/* global settings and variables */
 :root {
-    --box-size: 70px;
+  box-sizing: border-box;
+  font-family: Tahoma, Arial, sans-serif;
+  font-weight: bold;
+  --box-size: 50px; 
+  --title-font-size: 50px;
+  --main-font-size: 25px;
+  --small-font-size: 8px;
+  --bkg-color: #121213;
+  --border-color: gray;
+  --text-color: white;
 }
-
 body {
-    padding: 20px;
-    font-family: Helvetica;
+  background-color: var(--bkg-color);
+  color: var(--text-color);
 }
 
+/* header settings */
 .header {
-    text-align: center;
-    font-size: 30px;
-    color: #1a1a1b;
+  grid-column-start: 3;
+  grid-column-end: 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.help {right: 10px;}
+.stats, .refresh {left: 10px;}
+.help, .stats, .refresh {
+  height: var(--box-size);
+  width: var(--box-size);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.body-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+/* title settings */
+.title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto var(--box-size) var(--box-size) auto;
+  gap: 5px;
+  text-align: center;
+  font-size: var(--box-size);
 }
-  
-.box-container {
-    display: grid;
-    flex-grow: 2;
-    justify-content: center;
-    grid-template-columns: repeat(6, var(--box-size));
-    grid-template-rows: repeat(7, var(--box-size));
-    grid-gap: 10px;
-}
-  
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    border: 2px solid #d3d6da;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #1a1a1b;
+#title-N {background-color: rgb(200, 0, 100);}
+#title-Tl {background-color: rgb(100, 0, 200);}
+.title-element {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--box-size);
+  height: var(--box-size);
+  font-size: var(--main-font-size);
+  border: 1px solid var(--border-color);
 }
 
-#map {
-    display: grid;
-    width: 1000px;
-
+/* subtitle settings */
+#target {align-items: center;}
+#guesses {align-items: top;}
+#target, #guesses {
+  height: var(--box-size);
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 3;
+  grid-column-end: 13;
+  font-size: var(--main-font-size);
 }
 
+/* periodic table settings */
+.main-table {
+  display: grid;
+  grid-template-columns: repeat(17, var(--box-size));
+  grid-template-rows: repeat(6, var(--box-size));
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+.bottom-table {
+  display: grid;
+  grid-template-columns: repeat(14, var(--box-size));
+  grid-template-rows: repeat(2, var(--box-size));
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+/* element settings */
+.element {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: var(--box-size);
+  width: var(--box-size);
+  font-size: var(--main-font-size);
+  border: 1px solid var(--border-color);
+}
+.number {top: 2.5px; left: 2.5px;}
+.mass {bottom: 2.5px;}
+.number, .mass{
+  position: absolute;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+}
+
+/* positioning for main table elements */
+#H {grid-column: 1;}
+#He {grid-column: 18;}
+#Li {grid-column: 1;}
+#Be {grid-column: 2;}
+#B {grid-column: 13;}
+#C {grid-column: 14;}
+#N {grid-column: 15;}
+#O {grid-column: 16;}
+#F {grid-column: 17;}
+#Ne {grid-column: 18;}
+#Na {grid-column: 1;}
+#Mg {grid-column: 2;}
+#Al {grid-column: 13;}
+#Si {grid-column: 14;}
+#P {grid-column: 15;}
+#S {grid-column: 16;}
+#Cl {grid-column: 17;}
+#Ar {grid-column: 18;}
+
+/* help and stats popup settings */
+#help-popup, #stats-popup {
+  top: 10px;
+  margin: 10px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+}
+#help-popup-content, #stats-popup-content {
+  padding: 20px;
+  margin: 52.5px auto;
+  background-color: var(--bkg-color);
+  border: 1px solid var(--border-color);
+  width: 80%;
+}
+#help-close, #stats-close {float: right;}
+.help-popup-element {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--box-size);
+  height: var(--box-size);
+  font-size: var(--main-font-size);
+  border: 1px solid var(--border-color);
+}
+#help-popup-content-examples {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--box-size) auto;
+  grid-template-rows: repeat(3, var(--box-size));
+  gap: 10px;
+}
+#help-popup-W {background-color:rgb(100, 0, 200); grid-row: 1;}
+#help-popup-Al {background-color:rgb(200, 0, 100); grid-row: 2;}
+#help-popup-Se {background-color:rgb(0, 200, 0);grid-row: 3;}
+#help-popup-W-description {grid-row: 1; grid-column: 2;}
+#help-popup-Al-description {grid-row: 2; grid-column: 2;}
+#help-popup-Se-description {grid-row: 3; grid-column: 2;}
